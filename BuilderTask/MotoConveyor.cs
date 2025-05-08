@@ -1,28 +1,29 @@
 namespace BuilderTask;
 
-public class CarConveyor : Conveyor
+public class MotoConveyor : Conveyor
 {
-    public CarConveyor()
+    public MotoConveyor()
     {
-        _product = new Product("Автомобиль");
+        _product = new Product("Мотоцикл");
     }
+
     public override void BuildFrame()
     {
-        _product["frame"] = "Рама автомобиля";
+        _product["frame"] = "Рама мотоцикла";
     }
 
     public override void BuildEngine()
     {
-        _product["engine"] = "150 л.с.";
+        _product["engine"] = "70 л.с.";
     }
 
     public override void BuildWheels()
     {
-        _product["wheels"] = "4";
+        _product["wheels"] = "2";
     }
 
     public override void BuildDoors()
     {
-        _product["doors"] = "4";
+        _product["doors"] = "0";
     }
 }

@@ -1,9 +1,9 @@
 namespace Prototype;
 
-public class ClassOne(int id) : Prototype(id)
+public class ClassTwo(int id) : Prototype(id)
 {
     public override Prototype Clone()
     {
-        return new ClassOne(Id);
+        return new ClassTwo(Id);
     }
 }
