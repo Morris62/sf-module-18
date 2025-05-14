@@ -7,4 +7,15 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+        <PackageReference Include="YoutubeExplodeNoPolytics" Version="7.0.1"/>
+        <PackageReference Include="YoutubeExplodeNoPolytics.Converter" Version="7.0.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="ffmpeg">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
 </Project>
